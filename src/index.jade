@@ -1,0 +1,46 @@
+extends ./tpl/layout
+
+block page
+	.container
+		.row
+			.col-4.col-lg-2.col-md-3.col-sm-6.block
+				.d-none.d-lg-block col-lg-2
+				.d-none.d-md-block.d-lg-none col-md-3
+				.d-none.d-sm-block.d-md-none col-sm-6
+				.d-block.d-sm-none col-xs-4
+			.col-4.col-lg-8.col-md-6.col-sm-6.block
+				.d-none.d-lg-block col-lg-8
+				.d-none.d-md-block.d-lg-none col-md-6
+				.d-none.d-sm-block.d-md-none col-sm-6
+				.d-block.d-sm-none col-xs-4
+			.col-4.col-lg-2.col-md-3.d-sm-none.d-md-block.block
+				.d-none.d-lg-block col-lg-2
+				.d-none.d-md-block.d-lg-none col-md-3
+				.d-none.d-sm-block.d-md-none col-sm-6
+				.d-block.d-sm-none col-xs-4
+		.lobby
+			.lobby__item(data-src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm")
+				.lobby__wrapper
+					a(href="https://google.com")
+						img(src="https://i.picsum.photos/id/1070/400/400.jpg", alt="")
+						//- video(src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" muted)
+				.lobby__title Lorem, ipsum.
+			.lobby__item
+				.lobby__wrapper
+					a(href="https://google.com")
+						img(src="https://i.picsum.photos/id/1070/400/400.jpg", alt="")
+						video(src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" muted)
+				.lobby__title Lorem, ipsum.
+			.lobby__item
+				.lobby__wrapper
+					a(href="https://google.com")
+						img(src="https://i.picsum.photos/id/1070/400/400.jpg", alt="")
+						video(src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" muted)
+				.lobby__title Lorem, ipsum.
+			.lobby__item
+				.lobby__wrapper
+					a(href="https://google.com")
+						img(src="https://i.picsum.photos/id/1070/400/400.jpg", alt="")
+						video(src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" muted)
+				.lobby__title Lorem, ipsum.
+

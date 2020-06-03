@@ -1,0 +1,45 @@
+.lobby {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		width: calc(33.333% - 20px);
+		margin: 0 10px;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+
+	&__wrapper {
+		position: relative;
+		width: 100%;
+		padding-bottom: 100%;
+		border-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		background-color: blue;
+		overflow: hidden;
+	}
+	&__title {
+		color: #fff;
+		padding: 10px;
+		font-weight: bold;
+		background-color: gray;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	video, img {
+		position: absolute;
+		min-height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	video {
+		z-index: 1;
+	}
+	img {
+		z-index: 2;
+		transition: opacity .5s;
+	}
+}
