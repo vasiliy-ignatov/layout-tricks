@@ -1,3 +1,4 @@
+block pageVar
 include ./_mixins
 
 doctype html
@@ -13,10 +14,9 @@ html(lang="ru" class="")
 		
 	body
 		include ./header
-		block content-nav
 
-
-		block page
+		main.main
+			block page
 
 
 		script(src="./js/jquery.min.js" type="text/javascript")

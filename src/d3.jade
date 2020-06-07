@@ -1,0 +1,14 @@
+block pageVar
+	- pageName = 'd3'
+
+extends ./tpl/layout
+
+block page
+	.container
+		.article
+			.article__title
+				| Svg sprite exmaple
+			.article__content
+				svg(class="icon" fill="#fff")
+					use(xlink:href="../img/sprite.svg#timer")
+

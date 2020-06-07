@@ -7236,6 +7236,9 @@ html, body {
 .navbar {
   background-color: #171615; }
 
+.main {
+  min-height: 100vh; }
+
 .block {
   background-color: #eee;
   border: 1px solid #9D9D9D; }
