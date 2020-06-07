@@ -1,6 +1,7 @@
 @import "var";
 @import "bootstrap";
-@import "lobby";
+@import "lobby/lobby";
+@import "article";
 
 html, body {
 	background-color: #fff;
