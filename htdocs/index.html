@@ -10,8 +10,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
@@ -29,33 +29,56 @@
               <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
             </form>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <div class="container">
-      <div class="article">
-        <div class="article__title">Bootstrap responsive cols</div>
+      <div class="article article_black">
+        <div class="article__title article__title_white">Cricle svg diagrams</div>
         <div class="article__content">
           <div class="row">
-            <div class="col-4 col-lg-2 col-md-3 col-sm-6 block">
-              <div class="d-none d-lg-block">col-lg-2</div>
-              <div class="d-none d-md-block d-lg-none">col-md-3</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+            <div class="col-12 col-md-4">
+              <div class="c-chart">
+                <svg viewbox="0 0 36 36" class="c-chart__image">
+                  <path stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path"></path>
+                  <path stroke-dasharray="40, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path  c-chart__path_animated  c-chart__path_red"></path>
+                </svg>
+                <div class="c-chart__text c-chart__text_red">Красный
+                  <div class="c-chart__percent">40%</div>
+                </div>
+              </div>
             </div>
-            <div class="col-4 col-lg-8 col-md-6 col-sm-6 block">
-              <div class="d-none d-lg-block">col-lg-8</div>
-              <div class="d-none d-md-block d-lg-none">col-md-6</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+            <div class="col-12 col-md-4">
+              <div class="c-chart">
+                <svg viewbox="0 0 36 36" class="c-chart__image">
+                  <path stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path"></path>
+                  <path stroke-dasharray="50, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path  c-chart__path_animated  c-chart__path_white"></path>
+                </svg>
+                <div class="c-chart__text c-chart__text_white">Черный
+                  <div class="c-chart__percent">50%</div>
+                </div>
+              </div>
             </div>
-            <div class="col-4 col-lg-2 col-md-3 d-sm-none d-md-block block">
-              <div class="d-none d-lg-block">col-lg-2</div>
-              <div class="d-none d-md-block d-lg-none">col-md-3</div>
-              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
-              <div class="d-block d-sm-none">col-xs-4</div>
+            <div class="col-12 col-md-4">
+              <div class="c-chart">
+                <svg viewbox="0 0 36 36" class="c-chart__image">
+                  <path stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path"></path>
+                  <path stroke-dasharray="10, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" class="c-chart__path  c-chart__path_animated  c-chart__path_green"></path>
+                </svg>
+                <div class="c-chart__text c-chart__text_green">Зеленый
+                  <div class="c-chart__percent">10%</div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__title">Svg sprite exmaple</div>
+        <div class="article__content">
+          <svg fill="#fff" class="icon">
+            <use xlink:href="../img/sprite.svg#timer"></use>
+          </svg>
         </div>
       </div>
       <div class="article">
@@ -85,11 +108,28 @@
         </div>
       </div>
       <div class="article">
-        <div class="article__title">Working with svg sprites</div>
+        <div class="article__title">Bootstrap responsive cols</div>
         <div class="article__content">
-          <svg class="icon">
-            <use xlink:href="../img/sprite.svg#timer"></use>
-          </svg>
+          <div class="row">
+            <div class="col-4 col-lg-2 col-md-3 col-sm-6 block">
+              <div class="d-none d-lg-block">col-lg-2</div>
+              <div class="d-none d-md-block d-lg-none">col-md-3</div>
+              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
+              <div class="d-block d-sm-none">col-xs-4</div>
+            </div>
+            <div class="col-4 col-lg-8 col-md-6 col-sm-6 block">
+              <div class="d-none d-lg-block">col-lg-8</div>
+              <div class="d-none d-md-block d-lg-none">col-md-6</div>
+              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
+              <div class="d-block d-sm-none">col-xs-4</div>
+            </div>
+            <div class="col-4 col-lg-2 col-md-3 d-sm-none d-md-block block">
+              <div class="d-none d-lg-block">col-lg-2</div>
+              <div class="d-none d-md-block d-lg-none">col-md-3</div>
+              <div class="d-none d-sm-block d-md-none">col-sm-6</div>
+              <div class="d-block d-sm-none">col-xs-4</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

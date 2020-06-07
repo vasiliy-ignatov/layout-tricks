@@ -2,12 +2,19 @@
 @import "bootstrap";
 @import "lobby/lobby";
 @import "article";
+@import "circular-chart";
 
 html, body {
-	background-color: #fff;
+	background-color: #343a40;
 	font-family: 'Open Sans', sans-serif;
 }
 
+.header {
+	margin-bottom: 20px;
+}
+.navbar {
+	background-color: #171615;
+}
 .block	{
 	background-color: #eee;
 	border: 1px solid $gray;

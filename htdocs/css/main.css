@@ -7154,7 +7154,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 10px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: blue;
     overflow: hidden; }
   .lobby__title {
     color: #fff;
@@ -7179,16 +7178,63 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 2%;
   margin-bottom: 2%;
   background-color: lightgray;
-  border: 1px solid black;
-  border-radius: 25px; }
+  border-radius: 25px;
+  background-color: #171615; }
   .article__title {
     margin-bottom: 2%;
     font-size: bold;
+    font-size: 30px;
+    color: #fff; }
+
+.c-chart {
+  position: relative;
+  margin: 0 auto;
+  max-width: 60%; }
+  .c-chart__path {
+    stroke: #4C4338;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: unset; }
+    .c-chart__path_animated {
+      animation: c-progress 1s ease-out forwards; }
+    .c-chart__path_red {
+      stroke: #C00000; }
+    .c-chart__path_green {
+      stroke: #91D400; }
+    .c-chart__path_white {
+      stroke: #fff; }
+  .c-chart__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .c-chart__text_red {
+      color: #C00000; }
+    .c-chart__text_green {
+      color: #91D400; }
+    .c-chart__text_white {
+      color: #fff; }
+  .c-chart__percent {
     font-size: 30px; }
 
+@keyframes c-progress {
+  0% {
+    stroke-dasharray: 0 100; } }
+
 html, body {
-  background-color: #fff;
+  background-color: #343a40;
   font-family: 'Open Sans', sans-serif; }
+
+.header {
+  margin-bottom: 20px; }
+
+.navbar {
+  background-color: #171615; }
 
 .block {
   background-color: #eee;
