@@ -86,6 +86,11 @@ function vedorCss() {
 		.pipe(dest(PATHS.OUT + '/css'))
 }
 
+function data() {
+	return src(PATHS.IN  + '/data/*.*')
+		.pipe(dest(PATHS.OUT + '/data/'))
+}
+
 
 function watchFiles() {
 	watch(PATHS.IN  + '/**/*.jade', html)
@@ -94,13 +99,14 @@ function watchFiles() {
 }
 
 const vendor = series(vendorJs, vedorCss)
-const build = series(clean, parallel(css, js, html, fonts, img, jquery, bootstrapjs, vendor))
+const build = series(clean, parallel(css, js, html, fonts, img, jquery, bootstrapjs, data, vendor))
 
 exports.default = parallel(browserSync, watchFiles)
 exports.css = css
 exports.js = js
 exports.img = img
 exports.fonts = fonts
+exports.data = data
 exports.vendor = vendor
 exports.jquery = jquery
 exports.bootstrapjs = bootstrapjs
