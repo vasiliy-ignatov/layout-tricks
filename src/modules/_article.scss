@@ -5,10 +5,19 @@
 	border-radius: 25px;
 	background-color: #171615;
 
+	@media ($small) {
+		border-radius: 5px;
+	}
+
 	&__title {
 		margin-bottom: 2%;
 		font-size: bold;
 		font-size: 30px;
 		color: #fff;
+
+		@media ($small) {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
 	}
 }
